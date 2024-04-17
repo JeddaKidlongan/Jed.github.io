@@ -1840,6 +1840,12 @@ header .logo a {
 	position: relative;
 	left: -100%;
 }
+.folio-item img {
+	width: 150px;
+	height: 250px;
+	padding: 5px;
+	object-fit: cover;
+}
 
 #portfolio .folio-title {
 	color: #FFFFFF;

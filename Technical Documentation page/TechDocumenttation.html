@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="TechDoct.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>WebApp Documentation</header>
+        <a class="nav-link" href="#Key_Internet_Protocols">Key Internet Protocols</a>
+        <a class="nav-link" href="#Client-Server_Architecture">Client-Server Architecture</a>
+        <a class="nav-link" href="#Internet_Technologies">Internet Technologies</a>
+        <a class="nav-link" href="#Windows_Subsystem_for Linux">Windows Subsystem for Linux</a>
+        <a class="nav-link" href="#Apache_Commands">Apache Commands</a>
+        <a class="nav-link" href="#Apache_Setup">Apache Setup</a>
+        <a class="nav-link" href="#Basic_HTML">Basic HTML</a>
+        <a class="nav-link" href="#Advanced_Git_Commands">Advanced Git Commands</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Key_Internet_Protocols">
+            <header>Key Internet Protocols</header>
+            <ul>
+                <li><strong>HTTP</strong>
+                    <p>Foundation of data communication on the Web. Defines how messages are Formatted and transmitted.</p>
+                </li>
+                <li><strong>HTTPS</strong>
+                    <p>Secure version of HTTP using encryption (SSL/TLS). Ensures secure data transfer, especilly for sensitive information.</p>
+                </li>
+                <li><strong>TCP/IP</strong>
+                    <p>Fundamental suite of protocols for internet communication. Facilitates reliable data transmission between connected devices.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Client-Server_Architecture">
+            <header>Client-Server Architecture</header>
+            <ul>
+                <li><strong>Roles</strong>
+                    <p>Clients request services or resources. Servers provide requested services or resources.</p>
+                </li>
+                <li><strong>Request-Respones Cycle</strong>
+                    <p>Clients send requests to servers. Servers process requests and send back responses.</p>
+                </li>
+                <li><strong>Satelessness</strong>
+                    <p>Each request from a client to a server is independent. No retention of client state between requests.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Internet_Technologies">
+            <header>Internet Technologies</header>
+            <ul>
+                <li><strong>HTML</strong>
+                    <p>Standard markup language for creating web pages. Defines structure and layout using tags.</p>
+                </li>
+                <li><strong>CSS</strong>
+                    <p>Style sheet language for description the presentation of a document. Enhance the visual presentation of HTML elements.</p>
+                </li>
+                <li><strong>JavaScript</strong>
+                    <p>Programming language that enables dynamic content on web pages. Enhance interactivity and user experience.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Windows_Subsystem_for_Linux">
+            <header>Windows Subsystem for Linux</header>
+            <p>WSL transforms your Windows environment with Linux capabilities</p>
+            <code>wsl --install</code> :Installs linux on your computer
+            <code>wsl</code> :Opens Linux in your Terminal
+            <code>clear</code> :clears the terminal screen
+            <code>logout</code> :or <code>exit</code> : Returns to commad prompt in Windows
+        </section>
+
+        <section class="main-section" id="Apache_Commands">
+            <header>Apache Commands</header>
+            <p>Manage your web server setting via these Apache Terminal commads</p>
+            <code>sudo apt update</code> :Updates your Linux before installation of Apache
+            <code>sudo apt upgrade</code> : Upgrade linux
+            <code>sudo service apache2 start</code> : Start the Apache server
+        </section>
+
+        <section class="main-section" id="Apache_Setup">
+            <header>Apache Setup</header>
+            <p>Configure your apache setting for your project.</p>
+            <code>sudo nano</code> :Open text editor
+            <code>sudo chown -R username path/to/working/directory</code> :Make folder writable
+            <code>sudo nano /etc/apache2/sites-available/000-default.conf</code>
+            <p>Enable site; look for document root and change it to your desired folder to run in localhost.</p>
+        </section>
+
+        <section class="main-section" id="Basic_HTML">
+            <header>Basic HTML</header>
+            <p>HTML is the structure of your page. It's like the skleleton of the body.</p>
+            <p>The "Head" part holds link and metadata, and the "body" part is where you see all content. </p>
+            <code>&lt;!DOCTYPE&lt;</code>
+            <p>Titles, pharagraphs, and even awesome forms for user inputs can be created.</p>
+            <ul>
+                <li>Heading are like the title of a book ranging from big to small (h1 to h6)</li>
+                <li>A "p" tag make up the pharagraphs where all your info goes.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Advanced_Git_Commands">
+            <header>Advanced Git Commands</header>
+            <p>Guide on specific Git commands for efficient version control</p>
+            <code>$ git -am "comment"</code>
+            <code>$ git commit --amend -m "Updated comment"</code>
+        </section>
+    </main>
+</body>
+</html>
